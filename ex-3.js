@@ -1,5 +1,16 @@
 function isPlainObject(value) {
   // Start coding here
+  if(typeof value === "object"){
+    if(Array.isArray(value)){
+      return false
+    }
+    if(value === null){
+      return false
+    }
+    return true
+  } else{
+    return "This is not an object"
+  }
 }
 
 // Example case
