@@ -1,6 +1,8 @@
 function isPlainObject(value) {
   // Start coding here
+ return (typeof value === 'object' && value !== null && !Array.isArray(value));
 }
+
 
 // Example case
 let result1 = isPlainObject({ name: "John" });
